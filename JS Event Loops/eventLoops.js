@@ -2,6 +2,14 @@
 // Javascript is a single-threaded language, which means it can only execute one task at a time.
 // However, it can handle asynchronous operations using an event loop, which allows it to perform non-blocking tasks.
 
+// JS Order of execution:
+    // 1. Synchronous code
+    // 2. Asynchronous code:
+        // a) microtasks - (promises)
+        // b) macrotasks - (setTimeout, setInterval, etc.)
+    //
+//
+
 // synchronous code example:
 console.log("This is synchronous code.");
 console.log("It executes in order.");
